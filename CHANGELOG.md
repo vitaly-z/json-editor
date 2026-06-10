@@ -2,6 +2,7 @@
 
 - Fixed #1636. multiselect obstructed editor format "table"
 - Fixed #1559 and #1621 field dependent on false should now display
+- Fixed #1612, adding `for` attributes to labels in the Tailwind theme
 
 ### 2.15.2
 
