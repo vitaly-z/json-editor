@@ -250,6 +250,28 @@ export class tailwindTheme extends AbstractTheme {
     return group
   }
 
+  getHiddenLabel (text) {
+    const el = document.createElement('label')
+    el.textContent = text
+    el.classList.add('sr-only')
+    return el
+  }
+
+  visuallyHidden (element) {
+    if (!element) {
+      return
+    }
+
+    element.classList.add('hidden')
+  }
+
+  getHiddenText (text) {
+    const el = document.createElement('span')
+    el.textContent = text
+    el.classList.add('sr-only')
+    return el
+  }
+
   getHeaderButtonHolder () {
     const el = this.getButtonHolder()
     el.classList.add('text-sm')
